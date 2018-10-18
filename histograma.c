@@ -12,7 +12,6 @@ void progresO(int prog) {
 int main() {
 	int cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10;		//codurile serialelor
 	int prg1,prg2,prg3,prg4,prg5,prg6,prg7,prg8,prg9,prg10;		//progresul serialului
-	int a1=0,a2=0,a3=0,a4=0,a5=0,a6=0,a7=0,a8=0,a9=0,a10=0;				//auxiliare de progres
 	int counter = 1, n, change = 1, cod;
 	float aux1, aux2;
 
@@ -58,125 +57,22 @@ int main() {
 	if(n>=8) { printf("%d ", cod8); progresO(prg8); }
 	if(n>=9) { printf("%d ", cod9); progresO(prg9); }
 	if(n>=10) { printf("%d ", cod10); progresO(prg10); }
-
-	//scrierea progreselor auxiliare
-
-	if(n>=1) { if(a1==0) a1=prg1;
-		   else if(a2==0) a2=prg1;
-		   else if(a3==0) a3=prg1;
-		   else if(a4==0) a4=prg1;
-		   else if(a5==0) a5=prg1;
-		   else if(a6==0) a6=prg1;
-		   else if(a7==0) a7=prg1;
-		   else if(a8==0) a8=prg1;
-		   else if(a9==0) a9=prg1;
-		   else if(a10==0) a10=prg1; }
-	if(n>=2) { if(a1==0) a1=prg2;
-		   else if(a2==0) a2=prg2;
-		   else if(a3==0) a3=prg2;
-		   else if(a4==0) a4=prg2;
-		   else if(a5==0) a5=prg2;
-		   else if(a6==0) a6=prg2;
-		   else if(a7==0) a7=prg2;
-		   else if(a8==0) a8=prg2;
-		   else if(a9==0) a9=prg2;
-		   else if(a10==0) a10=prg2; }
-	if(n>=3) { if(a1==0) a1=prg3;
-		   else if(a2==0) a2=prg3;
-		   else if(a3==0) a3=prg3;
-		   else if(a4==0) a4=prg3;
-		   else if(a5==0) a5=prg3;
-		   else if(a6==0) a6=prg3;
-		   else if(a7==0) a7=prg3;
-		   else if(a8==0) a8=prg3;
-		   else if(a9==0) a9=prg3;
-		   else if(a10==0) a10=prg3; }
-	if(n>=4) { if(a1==0) a1=prg4;
-		   else if(a2==0) a2=prg4;
-		   else if(a3==0) a3=prg4;
-		   else if(a4==0) a4=prg4;
-		   else if(a5==0) a5=prg4;
-		   else if(a6==0) a6=prg4;
-		   else if(a7==0) a7=prg4;
-		   else if(a8==0) a8=prg4;
-		   else if(a9==0) a9=prg4;
-		   else if(a10==0) a10=prg4; }
-	if(n>=5) { if(a1==0) a1=prg5;
-		   else if(a2==0) a2=prg5;
-		   else if(a3==0) a3=prg5;
-		   else if(a4==0) a4=prg5;
-		   else if(a5==0) a5=prg5;
-		   else if(a6==0) a6=prg5;
-		   else if(a7==0) a7=prg5;
-		   else if(a8==0) a8=prg5;
-		   else if(a9==0) a9=prg5;
-		   else if(a10==0) a10=prg5; }
-	if(n>=6) { if(a1==0) a1=prg6;
-		   else if(a2==0) a2=prg6;
-		   else if(a3==0) a3=prg6;
-		   else if(a4==0) a4=prg6;
-		   else if(a5==0) a5=prg6;
-		   else if(a6==0) a6=prg6;
-		   else if(a7==0) a7=prg6;
-		   else if(a8==0) a8=prg6;
-		   else if(a9==0) a9=prg6;
-		   else if(a10==0) a10=prg6; }
-	if(n>=7) { if(a1==0) a1=prg7;
-		   else if(a2==0) a2=prg7;
-		   else if(a3==0) a3=prg7;
-		   else if(a4==0) a4=prg7;
-		   else if(a5==0) a5=prg7;
-		   else if(a6==0) a6=prg7;
-		   else if(a7==0) a7=prg7;
-		   else if(a8==0) a8=prg7;
-		   else if(a9==0) a9=prg7;
-		   else if(a10==0) a10=prg7; }
-	if(n>=8) { if(a1==0) a1=prg8;
-		   else if(a2==0) a2=prg8;
-		   else if(a3==0) a3=prg8;
-		   else if(a4==0) a4=prg8;
-		   else if(a5==0) a5=prg8;
-		   else if(a6==0) a6=prg8;
-		   else if(a7==0) a7=prg8;
-		   else if(a8==0) a8=prg8;
-		   else if(a9==0) a9=prg8;
-		   else if(a10==0) a10=prg8; }
-	if(n>=9) { if(a1==0) a1=prg9;
-		   else if(a2==0) a2=prg9;
-		   else if(a3==0) a3=prg9;
-		   else if(a4==0) a4=prg9;
-		   else if(a5==0) a5=prg9;
-		   else if(a6==0) a6=prg9;
-		   else if(a7==0) a7=prg9;
-		   else if(a8==0) a8=prg9;
-		   else if(a9==0) a9=prg9;
-		   else if(a10==0) a10=prg9; }
-	if(n==10) { if(a1==0) a1=prg10;
-		   else if(a2==0) a2=prg10;
-		   else if(a3==0) a3=prg10;
-		   else if(a4==0) a4=prg10;
-		   else if(a5==0) a5=prg10;
-		   else if(a6==0) a6=prg10;
-		   else if(a7==0) a7=prg10;
-		   else if(a8==0) a8=prg10;
-		   else if(a9==0) a9=prg10;
-		   else if(a10==0) a10=prg10; }
 	
 
 	//afisarea histogramei verticale
 	printf("\n\n");
 	for(int i=1; i<=10; i++) {
 		for(int j=1; j<=n; j++) {
-			if(j==1) { if(a1>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==2) { if(a2>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==3) { if(a3>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==4) { if(a4>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==5) { if(a5>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==6) { if(a6>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==7) { if(a7>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==8) { if(a8>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==9) { if(a9>10-i) { printf("* "); } else { printf(". "); } }
-			if(j==10) { if(a10>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==1) { if(prg1>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==2) { if(prg2>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==3) { if(prg3>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==4) { if(prg4>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==5) { if(prg5>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==6) { if(prg6>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==7) { if(prg7>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==8) { if(prg8>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==9) { if(prg9>10-i) { printf("* "); } else { printf(". "); } }
+			if(j==10) { if(prg10>10-i) { printf("* "); } else { printf(". "); } }
 		}	
 		printf("\n");
 	}
