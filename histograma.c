@@ -1,16 +1,26 @@
 #include <stdio.h>
 #include <math.h>
 
+void progresO(int prog) {
+	for(int i=1;i<=10;i++) {
+		if(i<=prog) { printf("* "); }
+		else { printf(". "); }
+	}
+	printf("\n");
+}
+
 int main() {
 	int cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10;		//codurile serialelor
 	int prg1,prg2,prg3,prg4,prg5,prg6,prg7,prg8,prg9,prg10;		//progresul serialului
 	int counter = 1, n;						
-int cod, aux1, aux2;
+	int cod;
+	float aux1, aux2;
+
 	scanf("%d", &n); 						//citirea numarului de seriale	
 	while(counter<=n) {
 		//citirea codurilor si calcularea progresului)
-		scanf("%d%d%d", &cod, &aux1, &aux2);
-		if(counter==1) { cod1=cod; prg1 = round((aux1/aux2)*10); }             
+		scanf("%d%f%f", &cod, &aux1, &aux2);
+		if(counter==1) { cod1=cod; prg1 = round((aux1/aux2)*10);}             
 		else if(counter==2) { cod2=cod; prg2 = round((aux1/aux2)*10); }
 		else if(counter==3) { cod3=cod; prg3 = round((aux1/aux2)*10); }
 		else if(counter==4) { cod4=cod; prg4 = round((aux1/aux2)*10); }
@@ -39,19 +49,20 @@ int cod, aux1, aux2;
 		if(cod8>cod9 && n>=9) { aux1 = cod8; cod8 = cod9; cod9 = aux1; aux2 = prg8; prg8 = prg9; prg9 = aux2; change = 1;}
 		if(cod9>cod10) { aux1 = cod9; cod9 = cod10; cod10 = aux1; aux2 = prg9; prg9 = prg10; prg10 = aux2; change = 1;}
 	}	
-
+	
+	
 	//afisarea codurilor filmelor - verificarea algoritmului de sortare
 	
-	if(n>=1) printf("%d\n", cod1);
-	if(n>=2) printf("%d\n", cod2);
-	if(n>=3) printf("%d\n", cod3);
-	if(n>=4) printf("%d\n", cod4);
-	if(n>=5) printf("%d\n", cod5);
-	if(n>=6) printf("%d\n", cod6);
-	if(n>=7) printf("%d\n", cod7);
-	if(n>=8) printf("%d\n", cod8);
-	if(n>=9) printf("%d\n", cod9);
-	if(n>=10) printf("%d\n", cod10);
+	if(n>=1) { printf("%d ", cod1); progresO(prg1); }
+	if(n>=2) { printf("%d ", cod2); progresO(prg2); }
+	if(n>=3) { printf("%d ", cod3); progresO(prg3); }
+	if(n>=4) { printf("%d ", cod4); progresO(prg4); }
+	if(n>=5) { printf("%d ", cod5); progresO(prg5); }
+	if(n>=6) { printf("%d ", cod6); progresO(prg6); }
+	if(n>=7) { printf("%d ", cod7); progresO(prg7); }
+	if(n>=8) { printf("%d ", cod8); progresO(prg8); }
+	if(n>=9) { printf("%d ", cod9); progresO(prg9); }
+	if(n>=10) { printf("%d ", cod10); progresO(prg10); }
 
 	
 	return 0;
