@@ -16,7 +16,6 @@ float medieArmonica (int n, float sA) {
 }
 
 float medieGeometrica (int n, float p) {
-	p = abs(p);
 	return pow(p,1.0/n);
 } 
 
@@ -26,7 +25,7 @@ float medieAritmetica (int n, float s) {
 
 void citeste(int n) {
 	float suma=0, produs=1, sArmonica=0, sumap=0, max, min, mAritmetica,big;
-	int negativ=0, minCount=0, maxCount=0, bigCount=1, maxBigCount=1;
+	int negativ=0, minCount=1, maxCount=1, bigCount=1, maxBigCount=1;
 	
 	for(int i=1; i<=n; i++) {
 		float aux;
@@ -38,28 +37,29 @@ void citeste(int n) {
 
 		if(aux<0.0) negativ = 1;
 
-		if(aux>max) { max=aux; maxCount=1;}
-		else if(aux==max) maxCount++;
-
-		if(aux<min) { min=aux; minCount=1;}
-		else if(aux==min) minCount++;
-		
-		if(i==1) {max=aux; min=aux; big=aux;}
-		else if(aux>=big) {
-			bigCount++;
-			if(bigCount>maxBigCount) {
-				maxBigCount = bigCount;
+		if(i==1) {max=aux; min=aux;}
+		else {
+			if(aux>=big) {
+				bigCount++;
+				if(bigCount>maxBigCount) {
+					maxBigCount = bigCount;
+				}
 			}
-		}
-		else bigCount=1;
-
+			else bigCount=1;	
+			
+			if(aux>max) { max=aux;}
+			else if(aux==max) maxCount++;
+			if(aux<min) { min=aux;}
+			else if(aux==min) minCount++;
+		}		
 		big=aux;
+
 	}
 	
 	mAritmetica = medieAritmetica(n, suma);
 	printf("%.4f\n", mAritmetica);
 	if(!negativ) printf("%.4f\n", medieGeometrica(n,produs));
-	else printf("- \n");
+	else printf("-\n");
 	printf("%.4f\n", medieArmonica(n, sArmonica));
 	printf("%.4f\n", mediePatratica(n, sumap));
 	printf("%.4f\n", abatereStandard(n,suma,sumap,produs,mAritmetica));

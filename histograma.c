@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
+/*
 void progresO(int prog) {
 	for(int i=1;i<=10;i++) {
 		if(i<=prog) { printf("* "); }
@@ -8,6 +9,7 @@ void progresO(int prog) {
 	}
 	printf("\n");
 }
+*/
 
 int main() {
 	int cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10;		//codurile serialelor
@@ -44,9 +46,11 @@ int main() {
 		if(cod8>cod9 && n>=9) { aux1 = cod8; cod8 = cod9; cod9 = aux1; aux2 = prg8; prg8 = prg9; prg9 = aux2; change = 1;}
 		if(cod9>cod10) { aux1 = cod9; cod9 = cod10; cod10 = aux1; aux2 = prg9; prg9 = prg10; prg10 = aux2; change = 1;}
 	}	
-		
-	//afisarea histogramei orizontale
 	
+
+
+	//afisarea histogramei orizontale
+	/*
 	if(n>=1) { printf("%d ", cod1); progresO(prg1); }
 	if(n>=2) { printf("%d ", cod2); progresO(prg2); }
 	if(n>=3) { printf("%d ", cod3); progresO(prg3); }
@@ -57,10 +61,9 @@ int main() {
 	if(n>=8) { printf("%d ", cod8); progresO(prg8); }
 	if(n>=9) { printf("%d ", cod9); progresO(prg9); }
 	if(n>=10) { printf("%d ", cod10); progresO(prg10); }
-	
+	*/
 
 	//afisarea histogramei verticale
-	printf("\n\n");
 	for(int i=1; i<=10; i++) {
 		for(int j=1; j<=n; j++) {
 			if(j==1) { if(prg1>10-i) { printf("* "); } else { printf(". "); } }
