@@ -33,10 +33,11 @@ int main() {
 		else if(counter==10) { cod10=cod; prg10 = round((aux1/aux2)*10); }
 		counter++;
 	}
-	
-	while(change) { 						//sortarea filmelor
+
+	while(change) { 					//sortarea filmelor
 		change = 0;
-		if(cod1>cod2 && n<=2) { aux1 = cod1; cod1 = cod2; cod2 = aux1; aux2 = prg1; prg1 = prg2; prg2 = aux2; change = 1;}
+
+		if(cod1>cod2 && n>=2) { aux1 = cod1; cod1 = cod2; cod2 = aux1; aux2 = prg1; prg1 = prg2; prg2 = aux2; change = 1;}
 		if(cod2>cod3 && n>=3) { aux1 = cod2; cod2 = cod3; cod3 = aux1; aux2 = prg2; prg2 = prg3; prg3 = aux2; change = 1;}
 		if(cod3>cod4 && n>=4) { aux1 = cod3; cod3 = cod4; cod4 = aux1; aux2 = prg3; prg3 = prg4; prg4 = aux2; change = 1;}
 		if(cod4>cod5 && n>=5) { aux1 = cod4; cod4 = cod5; cod5 = aux1; aux2 = prg4; prg4 = prg5; prg5 = aux2; change = 1;}
@@ -44,7 +45,7 @@ int main() {
 		if(cod6>cod7 && n>=7) { aux1 = cod6; cod6 = cod7; cod7 = aux1; aux2 = prg6; prg6 = prg7; prg7 = aux2; change = 1;}
 		if(cod7>cod8 && n>=8) { aux1 = cod7; cod7 = cod8; cod8 = aux1; aux2 = prg7; prg7 = prg8; prg8 = aux2; change = 1;}
 		if(cod8>cod9 && n>=9) { aux1 = cod8; cod8 = cod9; cod9 = aux1; aux2 = prg8; prg8 = prg9; prg9 = aux2; change = 1;}
-		if(cod9>cod10) { aux1 = cod9; cod9 = cod10; cod10 = aux1; aux2 = prg9; prg9 = prg10; prg10 = aux2; change = 1;}
+		if(cod9>cod10 && n==10) { aux1 = cod9; cod9 = cod10; cod10 = aux1; aux2 = prg9; prg9 = prg10; prg10 = aux2; change = 1;}
 	}	
 	
 

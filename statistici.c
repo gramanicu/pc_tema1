@@ -23,9 +23,10 @@ float medieAritmetica (int n, float s) {
 	return s/n;
 }
 
-void citeste(int n) {
-	float suma=0, produs=1, sArmonica=0, sumap=0, max, min, mAritmetica,big;
-	int negativ=0, minCount=1, maxCount=1, bigCount=1, maxBigCount=1;
+int main() {
+	float suma=0, produs=1, sArmonica=0, sumap=0, max, min, mAritmetica,crescator;
+	int negativ=0, minCount=1, maxCount=1, crescatorCount=1, maxCrescatorCount=1, n;
+	scanf("%d", &n);
 	
 	for(int i=1; i<=n; i++) {
 		float aux;
@@ -39,20 +40,20 @@ void citeste(int n) {
 
 		if(i==1) {max=aux; min=aux;}
 		else {
-			if(aux>=big) {
-				bigCount++;
-				if(bigCount>maxBigCount) {
-					maxBigCount = bigCount;
+			if(aux>=crescator) {
+				crescatorCount++;
+				if(crescatorCount>maxCrescatorCount) {
+					maxCrescatorCount = crescatorCount;
 				}
 			}
-			else bigCount=1;	
+			else crescatorCount=1;	
 			
 			if(aux>max) { max=aux;}
 			else if(aux==max) maxCount++;
 			if(aux<min) { min=aux;}
 			else if(aux==min) minCount++;
 		}		
-		big=aux;
+		crescator=aux;
 
 	}
 	
@@ -65,14 +66,7 @@ void citeste(int n) {
 	printf("%.4f\n", abatereStandard(n,suma,sumap,produs,mAritmetica));
 	printf("%.4f %d\n", min, minCount);
 	printf("%.4f %d\n", max, maxCount);
-	printf("%d\n", maxBigCount);
-}
- 
-
-int main() {
-	int n;
-	scanf("%d", &n);
-	citeste(n);
+	printf("%d\n", maxCrescatorCount);
 
 	return 0;
 }

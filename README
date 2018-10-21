@@ -1,5 +1,14 @@
 Fișierele temei trebuie OBLIGATORIU împachetate într-o arhiva de tip '.zip', cu numele 'Grupa_NumePrenume_Tema1.zip'. Această arhivă va conține:
-	1. Codul sursă al programului vostru (două fișiere .c si, eventual, .h)
-        2 .Un fişier Makefile care să conţină regulile build şi clean. Regula build va compila programele în două executabile cu numele hist 	        și stats. Regula clean va şterge executabilele şi eventual toate binarele intermediare (fişiere obiect) generate de voi.
-        3. Un fişier README care să conţină explicații privitoare la modul de rezolvare.
-        4. Arhiva temei NU va conține fișiere binare.
+
+Problema 1
+
+	Pentru a reduce numarul de variabile (care ar fi fost destul de mare, mai ales in lipsa vectorilor), in loc sa memorez numarul de episoade vizionate si numarul total de episoade in doua seturi de 10 variabile, calculez procentul vizionarii imediat dupa citire. 
+	Dupa citirea variabilelor, se sorteaza serialele in functie de cod, folosind metoda bulelor, adaptata pentru 10 variabile. In momentul interschimbarii codurilor se interschimba si procentele.
+	Apoi se afiseaza graficul pe verticala, si la final codurile serialelor.
+
+
+Problema 2
+	Pentru a putea calcula toate mediile (deoarece nu se cunoaste numarul posibil de inputuri), calculam suma, suma patratica, produsul si suma inverselor (numita sArmonica). Apoi, folosind aceste rezultate intermediare, se calculeaza media aritmetica, media geometrica, media armonica si media armonica. In timpul citirii, se calculeaza si maximul, minimul si numarul lor de aparitii. Pentru a putea calcula deviatia standard, am adus formula la o forma mai usor de implemetat: am ridicat paranteza la patrat, ajungand la o formula care depinde de numarul de variabile, suma variabilelor, suma patratelor si media aritmetica.
+	Pentru a putea scoate radical de ordin n, am ridicat numarul la puterea 1.0/n.
+	
+	
