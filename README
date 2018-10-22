@@ -1,5 +1,3 @@
-Fișierele temei trebuie OBLIGATORIU împachetate într-o arhiva de tip '.zip', cu numele 'Grupa_NumePrenume_Tema1.zip'. Această arhivă va conține:
-
 Problema 1
 
 	Pentru a reduce numarul de variabile (care ar fi fost destul de mare, mai ales in lipsa vectorilor), in loc sa memorez numarul de episoade vizionate si numarul total de episoade in doua seturi de 10 variabile, calculez procentul vizionarii imediat dupa citire. 
