@@ -6,6 +6,7 @@ Problema 1
 
 
 Problema 2
+
 	Pentru a putea calcula toate mediile (deoarece nu se cunoaste numarul posibil de inputuri), calculam suma, suma patratica, produsul si suma inverselor (numita sArmonica). Apoi, folosind aceste rezultate intermediare, se calculeaza media aritmetica, media geometrica, media armonica si media armonica. In timpul citirii, se calculeaza si maximul, minimul si numarul lor de aparitii. Pentru a putea calcula deviatia standard, am adus formula la o forma mai usor de implemetat: am ridicat paranteza la patrat, ajungand la o formula care depinde de numarul de variabile, suma variabilelor, suma patratelor si media aritmetica.
 	Pentru a putea scoate radical de ordin n, am ridicat numarul la puterea 1.0/n.
 	
