@@ -30,9 +30,10 @@ int main() {
     float sumap = 0, max, min, mAritmetica, crescator;
     int negativ = 0, minCount = 1, maxCount = 1;
     int crescatorCount = 1, maxCrescatorCount = 1, n;
+    int i;
     scanf("%d", & n); // se citeste numarul de valori
 
-    for (int i = 1; i <= n; i++) {
+    for (i = 1; i <= n; i++) {
         float aux; // valorile citite se memoreaza intr-o variabila auxiliara
         scanf("%f", & aux);
         suma += aux; // calculam suma numerelor
